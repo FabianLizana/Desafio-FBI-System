@@ -1,0 +1,1 @@
+http://localhost:3000/private para ir a ruta de acceso prohibido.
