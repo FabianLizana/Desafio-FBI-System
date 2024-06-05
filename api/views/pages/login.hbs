@@ -1,4 +1,9 @@
 {{>header}}
+{{!-- 2. Al autenticar un agente, devolver un HTML que:
+a. Muestre el email del agente autorizado. b. Guarde un token en SessionStorage con un tiempo de expiración de 2 minutos. c. 
+Disponibiliza un hiperenlace para redirigir al agente a una ruta restringida. (4 Puntos)
+
+---PASO 1 PUNTO 2---He creado el siguiente HTML el cual muestra lo pedido: --}}
 <main>
   <h2 class="my-5 text-center">Sesión iniciada correctamente</h2>
   <p class="text-center">
@@ -10,7 +15,7 @@
     <a href="/private?token={{{token}}}">LINK A RUTA PRIVADA</a>
   </p>
 </main>
-
+{{!-- ---PASO 2 PUNTO 2---El código siguiente me permite establecer en el session storage el token creado: --}}
 <script>
   const token = "{{{token}}}";
   const email = "{{{email}}}";

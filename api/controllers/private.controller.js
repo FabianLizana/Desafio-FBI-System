@@ -5,6 +5,7 @@ import path from "path";
 
 const secretKey = process.env.SECRET_KEY;
 
+// ---PASO 2 PUNTO 3---La cual utiliza la siguiente función renderPrivate:
 export function renderPrivate(req, res) {
   const { token } = req.query;
 

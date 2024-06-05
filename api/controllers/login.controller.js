@@ -4,6 +4,7 @@ import path from "path";
 import { results } from "../data/agentes.js";
 
 const secretKey = process.env.SECRET_KEY;
+// ---PASO 2 PUNTO 1---La cual utiliza la siguiente función login:
 export function login(req, res) {
   const { email, password } = req.body;
 
